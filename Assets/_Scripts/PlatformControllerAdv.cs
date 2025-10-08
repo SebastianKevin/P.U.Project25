@@ -114,6 +114,10 @@ public class PlatformControllerAdv : MonoBehaviour
         WallSlide();
         WallJump();
         PlayerJump();
+        if (isJumping)
+        {
+            anim.SetBool("Jumping", true);
+        }
     }
 
     //----- Movement -----\\
@@ -137,6 +141,7 @@ public class PlatformControllerAdv : MonoBehaviour
                 if (col.gameObject != this.gameObject)
                 {
                     isGrounded = true;
+                    anim.SetBool("Jumping", false);
                     break;
                 }
                 else
