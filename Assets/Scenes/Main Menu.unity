@@ -1331,7 +1331,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1501747230}
   - component: {fileID: 1501747229}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sky baggrund_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1420,7 +1420,7 @@ GameObject:
   - component: {fileID: 1673439329}
   - component: {fileID: 1673439328}
   - component: {fileID: 1673439327}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1514,7 +1514,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.5
+  orthographic size: 8.5
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -1539,7 +1539,7 @@ Transform:
   m_GameObject: {fileID: 1673439326}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.7, y: 1.4, z: -0.32293}
+  m_LocalPosition: {x: 2.7, y: 1.9, z: -0.32293}
   m_LocalScale: {x: 4, y: 2.43732, z: 1.2828}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1960,12 +1960,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2087393555}
     - target: {fileID: 582719607535193898, guid: c88a7e87a8b655a4a9c23ecff704442d, type: 3}
+      propertyPath: isDashing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 582719607535193898, guid: c88a7e87a8b655a4a9c23ecff704442d, type: 3}
       propertyPath: dashingPower
       value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 582719607535193898, guid: c88a7e87a8b655a4a9c23ecff704442d, type: 3}
       propertyPath: dashingCooldown
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 582719607535193898, guid: c88a7e87a8b655a4a9c23ecff704442d, type: 3}
+      propertyPath: wallLayer.m_Bits
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2902939538203398374, guid: c88a7e87a8b655a4a9c23ecff704442d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2060,7 +2068,7 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
+  m_AnimatePhysics: 1
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
